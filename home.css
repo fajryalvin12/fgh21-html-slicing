@@ -1,0 +1,111 @@
+@font-face {
+    font-family: "poppins";
+    src: url(./asset/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: "poppins-bold";
+    src: url(./asset/Poppins-Bold.ttf);
+}
+body {
+    margin: 0;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    font-family: poppins-bold;
+}
+.navigation .title {
+    font-size: 40px;
+}
+.navigation .title .blue {
+    color: blue;
+}
+.navigation .title .pink {
+    color: #FF3D71;
+}
+.navigation .menu {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    font-size: 14px;
+    margin-top: 20px;
+}
+.navigation button {
+    border-radius: 5px;
+    border: none;
+    font-family: poppins-bold;
+    width: 150px;
+    height: 40px;
+    margin: 10px 20px;
+}
+.navigation .sign {
+    background-color: #3366FF;
+    color: #ffff;
+    border: transparent;
+}
+.navigation .log {
+    background-color: #ffff;
+}
+.background-page {
+    background-color: #3366FF;
+}
+.background-page .logo {
+    text-align: right;
+}
+.events {
+    text-align: center;
+    margin-top: 80px;
+    font-family: poppins;
+    gap: 30px;
+}
+.events .subtitle {
+    border-radius: 15px;
+    border: none;
+    width: 150px;
+    height: 30px;
+    margin: 10px 20px;
+    color: #FF3D71;
+    background-color: #FFCFDB;
+    padding-left: 50px;
+    font-family: poppins-bold;
+    letter-spacing: 4px;
+}
+
+.events .header {
+    font-size: 24px;
+    font-family: poppins-bold;
+}
+
+.events .date {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-size: 14px;
+    color: grey;
+}
+.events .date .selected {
+    border: 1px solid #FF8900;
+    border-radius: 5px;
+    color: #FF8900;
+    padding: 5px;
+}
+.events .list-events {
+    display: flex;
+    margin-top: 25px;
+}
+.events .arrow {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    box-sizing: border-box;
+}
+
+.events .arrow .left{
+    border: 1px transparent grey;
+}
+.events .arrow .right{
+    border: 1px transparent white;
+    background-color: #3366FF;
+    margin: 2px 5px;
+    border-radius: 5px;
+}
