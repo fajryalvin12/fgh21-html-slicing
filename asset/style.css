@@ -1,0 +1,312 @@
+@font-face {
+    font-family: poppins;
+    src: url(./fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: poppins-bold;
+    src: url(./fonts/Poppins-Bold.ttf);
+}
+
+.signup {
+    display: flex;
+    width: 1366px;
+    height: 1024px;
+}
+.signup .left {
+    flex: 70%;
+    background-color: #3366FF;
+}
+.signup .right {
+    flex: 30%;
+    padding: 20px 30px;
+    margin-left: 75px;
+}
+
+.signup .right .heading {
+    font-family: poppins-bold;
+    margin-top: 75px;
+    font-size: 24px;
+}
+.signup .right .heading .blue {
+    color: #3366FF;
+}
+.signup .right .heading .pink {
+    color: #FC1055;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.content h1 {
+    font-family: poppins-bold;
+    font-size: 24px;
+}
+.content .subheading {
+    font-family: poppins;
+    font-size: 14px;
+}
+.content .subheading .subheading2 {
+    color: #3366FF;
+}
+.content form {
+    max-width: 315px;
+    justify-content: center;
+    padding: 5px 10px;
+}
+.content form .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 40px;
+}
+.content form .form .name, .content form .form .email, .content form .form .password, .content form .form .confirm{
+    height: 40px;
+    padding: 15px 15px;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    border-color: #C1C5D0;
+}
+.content .button {
+    box-sizing: border-box;
+    margin-top: 250px;
+    padding: 15px 15px;
+    max-width: 335px;
+    font-family: poppins-bold;
+    border-radius: 10px;
+    color: #ffff;
+    background-color: #3366FF;
+    border-style: hidden;
+}
+
+.navigation-bar {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+.navigation-bar .logo {
+    font-family: poppins-bold;
+    font-size: 24px;
+    align-items: center;
+}
+.navigation-bar .blue {
+    color: #3366FF;
+}
+.navigation-bar .pink {
+    color: #FC1055;
+}
+.navigation-bar .menu-bar {
+    font-family: poppins-bold;
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+    padding-top: 30px;
+}
+.navigation-bar button {
+    border-radius: 5px;
+    border: none;
+    font-family: poppins-bold;
+    max-width: 169px;
+    height: 40px;
+    padding: 10px 50px;
+}
+.navigation-bar .button{
+    display: flex;
+    padding: 20px 20px;
+}
+.navigation-bar .login {
+    border-style: none;
+    background-color: #ffff;
+    flex: 1;
+}
+.navigation-bar .signup{
+    background-color: #3366FF;
+    flex: 1;
+    color: #ffff;
+}
+
+.head{
+    height: 750px;
+    width: 1672px;
+    background-color: #3366FF;
+    background-image: url(./images/bubble-accent.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.head-event{
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+    padding: 50px;
+}
+.head-event .event{
+    background-color: #FFCFDB;
+    padding: 6px 30px 6px 70px;
+    font-family: poppins;
+    letter-spacing: 3px;
+    border-style: hidden;
+    color: #FC1055;
+    border-radius: 20px;
+}
+.head-event h1{
+    font-family: poppins-bold;
+}
+
+.date{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+    font-size: 14px;
+    color: grey;
+    padding: 5px;
+}
+.date .selected{
+    border: 1px solid #FF8900;
+    border-radius: 15px;
+    color: #FF8900;
+    padding: 0 5px 10px 5px;
+}
+
+.event-list{
+    position: relative;
+    left: 200px;
+    display: flex;
+    gap: 15px;
+    margin-top: 100px;
+    max-width: 1500px;
+    overflow-x: scroll;
+}
+.events-display{
+    width: 270px;
+    height: 386px;
+    background-color: #3366FF;
+    border-radius: 40px;
+    overflow: hidden;
+    position: relative;
+    flex-shrink: 0;
+}
+.events-display img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.events-display .event-details{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, transparent, black);
+    justify-content: flex-end;
+    padding: 25px;
+    box-sizing: border-box;
+    color: white;
+    gap: 24px;
+}
+.events-display .event-details .event-text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.events-display .event-details div:first-child{
+    font-size: 14px;
+}
+.events-display .event-details div:nth-child(2){
+    font-size: 22px;
+    font-family: poppins-bold;
+}
+.events-display .event-details .person{
+    display: flex;
+}
+.events-display .event-details .person div{
+    height: 28px;
+    width: 28px;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid white;
+}
+.events-display .event-details .person div:not(:first-child){
+    margin-left: -5px;
+}
+.events-display .event-details .person div:last-child{
+    position: relative;
+}
+.events-display .event-details .person div:last-child::after{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f7a240a8;
+}
+.events-display .event-details .person div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.location {
+    position: relative;
+    top: 100px;
+    left: 50px;
+    background-color: #3366FF;
+    width: 1266px;
+    height: 700px;
+    background-image: url(./images/bubble-accent.png);
+    border-radius: 40px;
+}
+.location .container {
+    padding: 74px 68px;
+    display: flex;
+    justify-content: space-between;
+}
+.location .title {
+    background-color: #7497FF;
+    padding: 6px 30px 6px 70px;
+    font-family: poppins;
+    letter-spacing: 3px;
+    border-style: hidden;
+    color: white;
+    border-radius: 20px;
+}
+.location .container h1 {
+    font-family: poppins;
+    color: #ffff;
+    max-width: 214px;
+    letter-spacing: 2px;
+}
+.location .container .destination-1{
+    display: flex;
+    gap: 65px;
+    padding-top: 50px;
+    padding-left: 20px;
+}
+.location .destination-2{
+    display: flex;
+    padding-left: 60px;
+    margin-top: -20px;
+    gap: 80px;
+    box-sizing: border-box;
+}
+.location .container .destination-1 p, .location .destination-2 p{
+    text-align: center;
+    font-family: poppins;
+    color: white;
+    letter-spacing: 1px;
+}
+.location .see-all{
+    background-color: #ffff;
+    color: #3366FF;
+    padding: 10px 100px;
+    border-style: hidden;
+    font-family: poppins-bold;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    margin-left: 533px;
+    margin-top: 20px;
+}
