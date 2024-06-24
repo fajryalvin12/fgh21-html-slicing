@@ -34,6 +34,7 @@
     margin: 200px 300px;
     justify-content: center;
     align-items: center;
+    letter-spacing: 1px;
 }
 .signup .right .heading {
     font-family: poppins-bold;
@@ -970,6 +971,12 @@ color: #3366FF;
     padding-left: 50px;
     font-family: poppins-bold;
 }
+.core .row .container .profile-list .wrapper {
+    max-width: 468px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
 .core .row .container .profile-list .header{
     font-size: 20px;
 }
@@ -977,9 +984,8 @@ color: #3366FF;
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 30px;
     font-family: poppins-semibold;
-    padding: 0 50px;
 }
 .core .row .container .profile-list .list .details{
     display: flex;
@@ -988,10 +994,40 @@ color: #3366FF;
     
 }
 .core .row .container .profile-list .list .details input{
-    border: none;
+    border: 1px solid rgba(128, 128, 128, 0.288);
     font-family: poppins;
+    padding: 10px 20px;
+    border-radius: 10px;
 }
 .core .row .container .profile-list .list .details input:first-child{
     border: 1px solid grey;
     font-family: poppins;
+}
+.core .row .container .profile-picture .wrapper{
+    max-width: 255px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 150px;
+}
+.core .row .container .profile-picture .wrapper .photo{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #3366FF;
+    justify-content: center;
+}
+.core .row .container .profile-picture .wrapper .submit{
+    padding: 10px 0;
+    font-family: poppins-semibold;
+    border: 1px solid #3366FF;
+    border-radius: 10px;
+    background-color: white;
+    color: #3366FF;
+    letter-spacing: 1px;
+}
+.core .row .container .profile-picture .wrapper .hint{
+    font-family: poppins;
+    font-size: 12px;
 }
