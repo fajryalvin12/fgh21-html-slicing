@@ -17,12 +17,11 @@
     height: 100%;
 }
 .signup .left {
-    flex: 60%;
+    flex: 1;
     background-color: #3366FF;
 }
 .signup .right {
-    flex: 40%;
-    padding: 30px 100px;
+    flex: 1;
     justify-content: center;
     text-align: left;
     align-items: center;
