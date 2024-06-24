@@ -6,29 +6,42 @@
     font-family: poppins-bold;
     src: url(./fonts/Poppins-Bold.ttf);
 }
-
-body {
-    width: auto;
+@font-face {
+    font-family: poppins-semibold;
+    src: url(./fonts/Poppins-SemiBold.ttf);
 }
+
+/* Sign Up */
 .signup {
     display: flex;
-    width: 1366px;
-    height: 1024px;
+    height: 100%;
 }
 .signup .left {
-    flex: 70%;
+    flex: 60%;
     background-color: #3366FF;
 }
 .signup .right {
-    flex: 30%;
-    padding: 20px 30px;
-    margin-left: 75px;
+    flex: 40%;
+    padding: 30px 100px;
+    justify-content: center;
+    text-align: left;
+    align-items: center;
 }
 
+.signup .right .right-wrapper{
+    max-width: 315px;
+    text-align: left;
+    box-sizing: border-box;
+    margin: 200px 300px;
+    justify-content: center;
+    align-items: center;
+}
 .signup .right .heading {
     font-family: poppins-bold;
-    margin-top: 75px;
     font-size: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 .signup .right .heading .blue {
     color: #3366FF;
@@ -37,44 +50,46 @@ body {
     color: #FC1055;
 }
 
-.content {
+.data {
     display: flex;
     flex-direction: column;
     gap: 7px;
+    justify-content: center;
+    text-align: left;
 }
-.content h1 {
+.data h1 {
     font-family: poppins-bold;
     font-size: 24px;
 }
-.content .subheading {
+.data .subheading {
     font-family: poppins;
     font-size: 14px;
 }
-.content .subheading .subheading2 {
+.data .subheading .subheading2 {
     color: #3366FF;
 }
-.content form {
+.data form {
     max-width: 315px;
     justify-content: center;
     padding: 5px 10px;
 }
-.content form .form {
+.data form .form {
     display: flex;
     flex-direction: column;
     gap: 20px;
     height: 40px;
 }
-.content form .form .name, .content form .form .email, .content form .form .password, .content form .form .confirm{
+.data form .form .name, .data form .form .email, .data form .form .password, .data form .form .confirm{
     height: 40px;
-    padding: 15px 15px;
+    padding: 15px 50px;
     letter-spacing: 1px;
     border-radius: 10px;
     border-color: #C1C5D0;
 }
-.content .button {
+.data .button {
     box-sizing: border-box;
     margin-top: 250px;
-    padding: 15px 15px;
+    padding: 15px 75px;
     max-width: 335px;
     font-family: poppins-bold;
     border-radius: 10px;
@@ -83,23 +98,49 @@ body {
     border-style: hidden;
 }
 
+/* Homepage */
 .homepage{
-    position: relative;
+    margin: 0;
     display: flex;
     flex-direction: column;
-    max-width: 1366px;
+    gap: 10px;
 }
 .navigation-bar {
     display: flex;
     justify-content: space-between;
     gap: 50px;
-    max-width: 1366px;
-    width: auto;
+    text-align: center;
+    align-items: center;
+    box-sizing: border-box;
 }
+
+@media (max-width: 768px){
+    .navigation-bar{
+        height: unset;
+        flex-direction: column;
+    }
+    .navigation-bar .menu-bar{
+        flex-direction: column;
+        text-align: center;
+    }
+    .navigation-bar .button{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 5px;
+    }
+    .navigation-bar .button button{
+        width: 100% !important;
+    }
+}
+
+
 .navigation-bar .logo {
     font-family: poppins-bold;
     font-size: 24px;
     align-items: center;
+    display: flex;
+    justify-content: center;
 }
 .navigation-bar .blue {
     color: #3366FF;
@@ -112,19 +153,19 @@ body {
     display: flex;
     list-style-type: none;
     gap: 40px;
-    padding-top: 30px;
 }
 .navigation-bar button {
     border-radius: 5px;
     border: none;
     font-family: poppins-bold;
-    max-width: 169px;
     height: 40px;
     padding: 10px 50px;
+    text-align: center;
 }
 .navigation-bar .button{
     display: flex;
-    padding: 20px 20px;
+    padding: 20px 40px;
+    text-align: center;
 }
 .navigation-bar .login {
     border-style: none;
@@ -139,11 +180,11 @@ body {
 
 .head{
     height: 750px;
-    width: 100%;
     background-color: #3366FF;
     background-image: url(./images/bubble-accent.png);
     background-repeat: no-repeat;
     background-size: cover;
+    margin-top: 5px;
 }
 .head-event{
     justify-content: center;
@@ -182,11 +223,9 @@ body {
 
 .event-list{
     position: relative;
-    left: 200px;
     display: flex;
     gap: 15px;
     margin-top: 100px;
-    max-width: 1500px;
     overflow-x: scroll;
 }
 .events-display{
@@ -262,53 +301,56 @@ body {
 }
 
 .location {
-    position: relative;
-    top: 100px;
-    left: 50px;
     background-color: #3366FF;
-    width: 1266px;
     height: 700px;
     background-image: url(./images/bubble-accent.png);
     border-radius: 40px;
-}
-.location .container {
-    padding: 74px 68px;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 0 50px;
+    justify-content: space-around;
+    overflow-x: auto;
+}
+.location .wrapper {
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
-.location .title {
-    background-color: #7497FF;
+.location .container {
+    display: flex;
+    font-family: poppins;
+    letter-spacing: 2px;
+    color: #ffff;
+    text-align: center;
+    justify-content: space-between;
+
+}
+.location .container .header{
+    text-align: left;
+    max-width: 230px;
+}
+.location .container .header .title{
+    max-width: 200px;
+    text-align: center;
+    justify-content: center;
     padding: 6px 30px 6px 70px;
     font-family: poppins;
     letter-spacing: 3px;
     border-style: hidden;
-    color: white;
     border-radius: 20px;
-}
-.location .container h1 {
-    font-family: poppins;
     color: #ffff;
-    max-width: 214px;
-    letter-spacing: 2px;
+    background-color: #ffffff83;
 }
-.location .container .destination-1{
+.location .container-2 {
     display: flex;
-    gap: 65px;
-    padding-top: 50px;
-    padding-left: 20px;
-}
-.location .destination-2{
-    display: flex;
-    padding-left: 60px;
-    margin-top: -20px;
-    gap: 80px;
-    box-sizing: border-box;
-}
-.location .container .destination-1 p, .location .destination-2 p{
-    text-align: center;
     font-family: poppins;
-    color: white;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    color: #ffff;
+    text-align: center;
+    justify-content: space-between;
 }
 .location .see-all{
     background-color: #ffff;
@@ -318,8 +360,9 @@ body {
     font-family: poppins-bold;
     letter-spacing: 1px;
     border-radius: 10px;
-    margin-left: 533px;
-    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    max-width: 255px;
 }
 
 .head-category {
@@ -350,12 +393,11 @@ body {
 }
 .category-box{
     position: relative;
-    left: 200px;
     display: flex;
     gap: 75px;
     margin-top: 100px;
-    max-width: 1750px;
     overflow-x: scroll;
+    justify-content: center;
 }
 .category-display{
     width: 300px;
@@ -433,7 +475,6 @@ body {
     text-align: center;
     font-family: poppins;
     margin:200px 0 0 0;
-    width: 1366px;
     height: 450px;
     background-image: url(./images/bubble-accent.png);
     background-color: #24252b;
@@ -442,6 +483,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     letter-spacing: 3px;
+    overflow-x: auto;
 }
 .partner .header{
     max-width: 200px;
@@ -465,11 +507,13 @@ body {
     padding: 70px 350px;
 }
 
+.footer {
+    justify-content: center;
+}
 .footer .container{
     margin: 159px 218px;
     position: relative;
     top: 100px;
-    width: 930px;
     height: 328px;
     display: flex;
     gap: 100px;
@@ -478,7 +522,8 @@ body {
     font-family: poppins-bold;
     font-size: 24px;
     align-items: center;
-    max-width: 257px;
+    display: flex;
+    justify-content: left;
 }
 .footer .container .header .logo .blue {
     color: #3366FF;
@@ -501,6 +546,8 @@ body {
     gap: 150px;
     font-family: poppins-bold;
     font-size: 16px;
+    max-width: 270px;
+    background-color: white;
 }
 .footer .container .content div:first-child{
     display: flex;
@@ -510,4 +557,442 @@ body {
     font-family: poppins;
     color: #C1C5D0;
     font-size: 14px;
+}
+
+/* Booking Page */
+.booking-page{
+    display: flex;
+    flex-direction: column;
+}
+.navigation-bar-2{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    text-align: center;
+    align-items: center;
+    height: 90px;
+    background-color: #ffffff;
+}
+.navigation-bar-2 .logo {
+    font-family: poppins-bold;
+    font-size: 24px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-left: 50px;
+}
+.navigation-bar-2 .blue {
+color: #3366FF;
+}
+.navigation-bar-2 .pink {
+    color: #FC1055;
+}
+.navigation-bar-2 .menu-bar {
+    font-family: poppins-bold;
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+}
+.navigation-bar-2 .name-profile{
+    display: flex;
+    gap: 20px;
+    padding-right: 50px;
+}
+.navigation-bar-2 .name-profile img{
+    width: 55px;
+    height: 55px;
+    border-radius: 27px;
+    border: 1px solid #3366FF;
+}
+.navigation-bar-2 .name-profile p{
+    font-family: poppins-bold;
+}
+
+.content{
+    background-color: #F4F7FF;
+    height: 1560px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content .container{
+    background-color: #ffffff;
+    height: 850px;
+    max-width: 1186px;
+    border-radius: 40px;
+    display: flex;
+    margin-top: 60px;
+    width: 100%;
+}
+.content .container .stadium{
+    flex: 1;
+    max-width: 600px;
+    width: 50%;
+}
+.content .container .booking-ticket{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    flex: 1;
+    width: 50%;
+}
+.content .container .booking-ticket .wrapper {
+    max-width: 375px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 100px;
+    gap: 20px;
+}
+.content .container .booking-ticket .title{
+    display: flex;
+    justify-content: space-between;
+    font-family: poppins-semibold;
+    gap: 200px;
+    text-align: center;
+    align-items: center;
+    font-size: 16px;
+    padding-top: 50px;
+    width: 100%;
+}
+.content .container .booking-ticket .title .by-price{
+    display: flex;
+    gap: 20px;
+    color: #FC1055;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-align: center;
+    align-items: center;
+}
+.content .container .booking-ticket .ticket-list{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 100%;
+}
+.content .container .booking-ticket .ticket-1 .details{
+    display: flex;
+    justify-content: space-between;
+    font-family: poppins-semibold;
+    text-transform: uppercase;
+}
+.content .container .booking-ticket .ticket-1 .details img{
+    padding: 10px;
+    background-color: #F4F7FF;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+}
+.content .container .booking-ticket .ticket-1 .details .red{
+    background-color: #FFEAEF;
+}
+.content .container .booking-ticket .ticket-1 .details .orange{
+    background-color: #FFF4E7;
+}
+.content .container .booking-ticket .ticket-1 .details .details-name div:last-child{
+    font-size: 12px;
+    color: #C1C5D0;
+    text-transform: none;
+}
+.content .container .booking-ticket .ticket-1 .quantity{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-family: poppins-semibold;
+}
+.content .container .booking-ticket .ticket-1 .quantity .title{
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 14px;
+}
+.content .container .booking-ticket .ticket-1 .quantity .total{
+    display: flex;
+    gap: 25px;
+    text-align: center;
+    align-items: center;
+}
+.content .container .booking-ticket .ticket-1 .quantity .total button{
+    background-color: white;
+    padding: 4px;
+    border-radius: 5px;
+    border-color: #c1c5d03f;
+}
+.content .container .booking-ticket .booking-details{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-top: 1px solid rgba(128, 128, 128, 0.199);
+    padding-top: 20px;
+    width: 100%;
+}
+.content .container .booking-ticket .booking-details .row-1{
+    display: flex;
+    justify-content: space-between;
+    font-family: poppins-semibold;
+}
+.content .container .booking-ticket .booking-details .row-1 div{
+    flex: 1;
+}
+.content .container .booking-ticket .booking-details .row-1 .details{
+    text-align: right;
+    color: #3366FF;
+}
+.content .container .booking-ticket button{
+    font-family: poppins-semibold;
+    color: white;
+    background-color: #3366FF;
+    padding: 16px 110px;
+    letter-spacing: 1px;
+    max-width: 315px;
+    border: 1px transparent;
+    border-radius: 10px;
+}
+.content .footer-booking .container-booking{
+    background-color: #F4F7FF;
+    max-width: 930px;
+    display: flex;
+    gap: 100px;
+    text-align: center;
+    padding-top: 50px;
+}
+.content .footer-booking .container-booking .header{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: left;
+}
+.content .footer-booking .container-booking .header .caption{
+    font-family: poppins-bold;
+}
+.content .footer-booking .container-booking .header .logo{
+    font-family: poppins-bold;
+    font-size: 24px;
+    align-items: center;
+    display: flex;
+    justify-content: left;
+}
+.content .footer-booking .container-booking .header .logo .blue{
+    color: #3366FF;
+}
+.content .footer-booking .container-booking .header .logo .pink{
+    color: #FC1055;
+}
+.content .footer-booking .container-booking .menu-bar{
+    display: flex;
+    gap: 75px;
+    text-align: left;
+    color: #C1C5D0;
+    font-family: poppins;
+    letter-spacing: 2px;
+}
+.content .footer-booking .container-booking .menu-bar .select{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.content .footer-booking .container-booking .menu-bar .select .title{
+    color: black;
+    font-family: poppins-bold;
+    letter-spacing: 1px;
+}
+
+/* Payment Page */
+
+.content .container .payment-method, .content .container .ticket-details{
+    flex: 1;
+    padding: 71px 90px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+.content .container .payment-method .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 375px;
+}
+.content .container .payment-method .wrapper div:first-child{
+    font-family: poppins-bold;
+    padding-left: 21px;
+    padding-bottom: 20px;
+}
+.content .container .payment-method .details{
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    font-size: 16px;
+    max-width: 315px;
+    font-family: poppins-semibold;
+    text-align: center;
+    align-items: center;
+}
+.content .container .payment-method .details span{
+    width: 120px;
+    padding: 0;
+}
+.content .container .payment-method .details .icon{
+    padding: 10px;
+    background-color: #E7DBFF;
+    border-radius: 10px;
+}
+.content .container .payment-method .details .arrow{
+    padding-left: 100px;
+}
+.content .container .payment-method .card{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: left;
+    gap: 50px;
+}
+.content .container .payment-method .card .plus{
+    padding: 10px;
+    color: #3366FF;
+    background-color: white;
+    border: 1px dashed #3366FF;
+    border-radius: 5px;
+}
+.content .container .ticket-details {
+    max-width: 363px;
+    display: flex;
+    flex-direction: column;
+    gap: 55px;    
+}
+.content .container .ticket-details .wrapper{
+    max-width: 363px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.content .container .ticket-details .wrapper div:first-child{
+    font-family: poppins-bold;
+    color: black;
+}
+.content .container .ticket-details .data .details{
+    display: flex;
+    justify-content: space-between;
+    font-family: poppins-bold;
+    font-size: 14px;
+    color: #3366FF;
+    margin-bottom: 10px;
+}
+.content .container .ticket-details .payment{
+    padding: 16px 106px;
+    border: transparent;
+    color: white;
+    background-color: #3366FF;
+    border-radius: 15px;
+    font-family: poppins-semibold;
+    letter-spacing: 2px;
+}
+
+/* Profile Page */
+
+.core{
+    background-color: #F4F7FF;
+    height: 1560px;
+}
+.core .row{
+    display: flex;
+    padding-top: 50px;
+    gap: 60px;
+}
+.core .row .container{
+    background-color: #ffffff;
+    height: 850px;
+    max-width: auto;
+    width: 100%;
+    border-radius: 40px;
+    display: flex;
+    margin-right: 50px;
+}
+.core .row .menu{
+    max-width: 280px;
+    padding-left: 70px;
+    padding-right: 58px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+.core .row .menu .biodata{
+    display: flex;
+    max-width: 280px;
+    gap: 20px;
+    font-family: poppins;
+}
+.core .row .menu .biodata img{
+    width: 55px;
+    height: 55px;
+    border-radius: 27px;
+    border: 2px solid #3366FF;
+}
+.core .row .menu .biodata .name{
+    max-width: 242px;
+    width: 100%;
+    font-size: 16px;
+    list-style: none;
+}
+.core .row .menu .biodata .name li:first-child{
+    font-family: poppins-semibold;
+}
+.core .row .menu .list{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-family: poppins-semibold;
+    list-style: none;
+    letter-spacing: 1px;
+}
+.core .row .menu .list .choice{
+    display: flex;
+    gap: 30px;
+}
+.core .row .menu .list div:nth-child(2), .core .row .menu .list div:nth-child(3), .core .row .menu .list div:nth-child(4){
+    padding-left: 35px;
+}
+.core .row .menu .list div:nth-child(3){
+    color: #3366FF;
+}
+.core .row .menu .list div:last-child{
+    color: red;
+}
+
+.core .row .container .profile-list, .core .row .container .profile-picture{
+    height: 100%;
+    flex: 1;
+}
+.core .row .container .profile-list{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 50px;
+    padding-left: 50px;
+    font-family: poppins-bold;
+}
+.core .row .container .profile-list .header{
+    font-size: 20px;
+}
+.core .row .container .profile-list .list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-family: poppins-semibold;
+    padding: 0 50px;
+}
+.core .row .container .profile-list .list .details{
+    display: flex;
+    gap: 100px;
+    justify-content: space-between;
+    
+}
+.core .row .container .profile-list .list .details input{
+    border: none;
+    font-family: poppins;
+}
+.core .row .container .profile-list .list .details input:first-child{
+    border: 1px solid grey;
+    font-family: poppins;
 }
