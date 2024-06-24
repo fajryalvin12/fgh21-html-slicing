@@ -7,11 +7,17 @@
     </head>
     <body>
         <div class="homepage">
-            <nav class="navigation-bar">
+            <nav id="nav" class="navigation-bar">
+                <div class="main">
                     <div class="logo">
                         <img src="./asset/icons/logo.png" alt="wetick">
-                        <span class="blue">We</span><span class="pink">tick</span>
+                        <span class="blue">We</span>
+                        <span class="pink">tick</span>
                     </div>
+                    <div>
+                        <button id="menu">MENU</button>
+                    </div>
+                </div>
                     <div class="menu-bar">
                             <li>Home</li>
                             <li>Create Event</li>
@@ -23,7 +29,6 @@
                     </div>
             </nav>
             <div class="head">
-                <img src="./asset/images/mascot.png" alt="">
             </div>
             <div class="head-event">
                 <button class="event">EVENT</button>
@@ -342,5 +347,18 @@
                 </div>
             </div>
         </div>
+        <script>
+            const menuButton = document.getElementById("menu")
+            const nav = document.getElementById("nav")
+            const navCenter = document.body.getElementsByClassName("menu-bar").item(0)
+            const navRight = document.body.getElementsByClassName("button").item(0)
+            menuButton.onclick = ()=> {
+                if(navCenter.getAttribute("style")) {
+                    navCenter.removeAttribute("style")
+                } else {
+                    navCenter.setAttribute("style", "display: none;")
+                }
+            }
+        </script>
     </body>
 </html>
