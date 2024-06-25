@@ -122,11 +122,17 @@ body {
     box-sizing: border-box;
     padding: 0 20px;
 }
+.navigation-bar > .main > div:last-child{
+    display: none;
+}
 
 @media (max-width: 992px){
     .navigation-bar{
         height: unset;
         flex-direction: column;
+    }
+    .navigation-bar > .main > div:last-child{
+        display: unset;
     }
     .navigation-bar .menu-bar{
         flex-direction: column;
@@ -522,58 +528,33 @@ body {
     padding: 70px 350px;
 }
 
-.footer {
-    justify-content: center;
-}
-.footer .container{
-    margin: 159px 218px;
-    position: relative;
-    top: 100px;
-    height: 328px;
-    display: flex;
-    gap: 100px;
-}
-.footer .container .header .logo {
-    font-family: poppins-bold;
-    font-size: 24px;
-    align-items: center;
-    display: flex;
-    justify-content: left;
-}
-.footer .container .header .logo .blue {
-    color: #3366FF;
-}
-.footer .container .header .logo .pink {
-    color: #FC1055;
-}
-.footer .container .header .caption {
-    margin-top: 20px;
+.footer{
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    font-family: poppins-bold;
-    max-width: 257px;
-}
-.footer .container .content{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    gap: 150px;
-    font-family: poppins-bold;
+    gap: 75px;
     font-size: 16px;
-    max-width: 270px;
-    background-color: white;
+    font-family: poppins;
+    padding: 160px 40px;
 }
-.footer .container .content div:first-child{
+.footer > .section{
+    display: flex;
+}
+.footer > .section > div{
+    flex : 1;
+}
+.footer > .section > div:not(:first-child) > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
-}
-.footer .container .content p{
-    font-family: poppins;
+    gap: 15px;
     color: #C1C5D0;
-    font-size: 14px;
 }
-
+.footer > .section > div:not(:first-child) > div:first-child {
+    font-family: poppins-bold;
+    margin-bottom: 20px;
+}
 /* Booking Page */
 .booking-page{
     display: flex;
