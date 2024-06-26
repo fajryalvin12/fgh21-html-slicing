@@ -155,7 +155,6 @@ body {
     }
 }
 
-
 .navigation-bar .logo {
     font-family: poppins-bold;
     font-size: 24px;
@@ -248,6 +247,7 @@ body {
     gap: 15px;
     margin-top: 100px;
     overflow-x: scroll;
+    padding: 0 40px;
 }
 .events-display{
     width: 270px;
@@ -534,7 +534,7 @@ body {
     gap: 75px;
     font-size: 16px;
     font-family: poppins;
-    padding: 160px 40px;
+    padding: 160px 30px;
 }
 .footer > .section{
     display: flex;
@@ -542,6 +542,23 @@ body {
 .footer > .section > div{
     flex : 1;
 }
+.footer > .section > .brand {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: poppins-bold;
+} 
+.footer > .section > .brand .logo{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+} 
+.footer > .section > .brand > .logo > .blue{
+    color: #3366FF;
+} 
+.footer > .section > .brand > .logo > .pink{
+   color: #FC1055;
+} 
 .footer > .section > div:not(:first-child) > ul {
     list-style-type: none;
     margin: 0;
@@ -589,18 +606,18 @@ color: #3366FF;
     list-style-type: none;
     gap: 40px;
 }
-.navigation-bar-2 .name-profile{
+.navigation-bar .name-profile{
     display: flex;
     gap: 20px;
     padding-right: 50px;
 }
-.navigation-bar-2 .name-profile img{
+.navigation-bar .name-profile img{
     width: 55px;
     height: 55px;
     border-radius: 27px;
     border: 1px solid #3366FF;
 }
-.navigation-bar-2 .name-profile p{
+.navigation-bar .name-profile p{
     font-family: poppins-bold;
 }
 
@@ -614,11 +631,9 @@ color: #3366FF;
 .content .container{
     background-color: #ffffff;
     height: 850px;
-    max-width: 1186px;
     border-radius: 40px;
     display: flex;
     margin-top: 60px;
-    width: 100%;
 }
 .content .container .stadium{
     flex: 1;
@@ -953,6 +968,7 @@ color: #3366FF;
     color: red;
 }
 
+
 .core .row .container .profile-list, .core .row .container .profile-picture{
     height: 100%;
     flex: 1;
@@ -966,7 +982,6 @@ color: #3366FF;
     font-family: poppins-bold;
 }
 .core .row .container .profile-list .wrapper {
-    max-width: 468px;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -998,12 +1013,11 @@ color: #3366FF;
     font-family: poppins;
 }
 .core .row .container .profile-picture .wrapper{
-    max-width: 255px;
     justify-content: center;
     display: flex;
     flex-direction: column;
     gap: 40px;
-    margin: 150px;
+    padding: 150px;
 }
 .core .row .container .profile-picture .wrapper .photo{
     width: 150px;
