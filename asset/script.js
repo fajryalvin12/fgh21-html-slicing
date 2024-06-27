@@ -1,9 +1,11 @@
 // navigation-bar-home
 
 const menuButton = document.getElementById("menu")
-        const nav = document.getElementById("nav")
+    const nav = document.getElementById("nav")
         const navCenter = document.body.getElementsByClassName("menu-bar").item(0)
         const navRight = document.body.getElementsByClassName("button").item(0)
+        const navProfile = document.body.getElementsByClassName("name-profile").item(0)
+
         menuButton.onclick = () => {
             if (navCenter.getAttribute("style")) {
                 navCenter.removeAttribute("style")
@@ -16,6 +18,7 @@ const menuButton = document.getElementById("menu")
             } else {
                 navRight.setAttribute("style", "display: none;")
             }
+
         }
 
 // footer-home
@@ -41,7 +44,7 @@ addContent(footer1, content[0])
 addContent(footer2, content[1])
 addContent(footer3, content[2])
 
-//homepage event-list
+// eventlist-home
 
     const events = [ 
         {
