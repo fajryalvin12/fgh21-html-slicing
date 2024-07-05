@@ -12,25 +12,25 @@
 }
 body {
     margin: 0;
+    background-color:  #F4F7FF;
 }
 /* Sign Up */
-.signup {
+.auth-content {
     display: flex;
     height: 100%;
 }
-.signup .left {
+.left {
     flex: 1;
     background-color: #3366FF;
 }
-.signup .right {
+.right {
     flex: 1;
     justify-content: center;
     text-align: left;
     align-items: center;
-    background-color: #c1c5d011;
 }
 
-.signup .right .right-wrapper{
+.right .right-wrapper{
     max-width: 315px;
     text-align: left;
     box-sizing: border-box;
@@ -39,17 +39,17 @@ body {
     align-items: center;
     letter-spacing: 1px;
 }
-.signup .right .heading {
+.right .heading {
     font-family: poppins-bold;
     font-size: 24px;
     display: flex;
     align-items: center;
     text-align: center;
 }
-.signup .right .heading .blue {
+.right .heading .blue {
     color: #3366FF;
 }
-.signup .right .heading .pink {
+.right .heading .pink {
     color: #FC1055;
 }
 @media (max-width:992px) {
@@ -87,18 +87,15 @@ body {
     gap: 20px;
     height: 40px;
 }
-.data form .form .name, .data form .form .email, .data form .form .password, .data form .form .confirm{
-    height: 40px;
+.name, .email, .password, .confirm{
     padding: 15px 50px;
     letter-spacing: 1px;
     border-radius: 10px;
     border-color: #C1C5D0;
 }
 .data .button {
-    box-sizing: border-box;
     margin-top: 250px;
     padding: 15px 75px;
-    max-width: 335px;
     font-family: poppins-bold;
     border-radius: 10px;
     color: #ffff;
@@ -121,6 +118,8 @@ body {
     align-items: center;
     box-sizing: border-box;
     padding: 0 20px;
+    height: 90px;
+    background-color: #fff;
 }
 .navigation-bar > .main > div:last-child{
     display: none;
@@ -189,7 +188,7 @@ body {
     text-align: center;
 }
 .navigation-bar .button{
-    display: flex;
+    /* display: flex; */
     padding: 20px 40px;
     text-align: center;
 }
@@ -200,8 +199,9 @@ body {
 }
 .navigation-bar .signup{
     background-color: #3366FF;
-    flex: 1;
     color: #ffff;
+    display: flex;
+    justify-content: center;
 }
 
 .head{
@@ -764,54 +764,6 @@ color: #3366FF;
     border: 1px transparent;
     border-radius: 10px;
 }
-.content .footer-booking .container-booking{
-    background-color: #F4F7FF;
-    max-width: 930px;
-    display: flex;
-    gap: 100px;
-    text-align: center;
-    padding-top: 50px;
-}
-.content .footer-booking .container-booking .header{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    text-align: left;
-}
-.content .footer-booking .container-booking .header .caption{
-    font-family: poppins-bold;
-}
-.content .footer-booking .container-booking .header .logo{
-    font-family: poppins-bold;
-    font-size: 24px;
-    align-items: center;
-    display: flex;
-    justify-content: left;
-}
-.content .footer-booking .container-booking .header .logo .blue{
-    color: #3366FF;
-}
-.content .footer-booking .container-booking .header .logo .pink{
-    color: #FC1055;
-}
-.content .footer-booking .container-booking .menu-bar{
-    display: flex;
-    gap: 75px;
-    text-align: left;
-    color: #C1C5D0;
-    font-family: poppins;
-    letter-spacing: 2px;
-}
-.content .footer-booking .container-booking .menu-bar .select{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-.content .footer-booking .container-booking .menu-bar .select .title{
-    color: black;
-    font-family: poppins-bold;
-    letter-spacing: 1px;
-}
 
 /* Payment Page */
 
@@ -1044,4 +996,182 @@ color: #3366FF;
 .core .row .container .profile-picture .wrapper .hint{
     font-family: poppins;
     font-size: 12px;
+}
+
+/* event-page */
+.content .container .left div:first-child{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.content .container .left div:first-child > div:last-child{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+.content .container .left div:first-child > div:last-child img{
+    width: 24px;
+    height: 24px;
+}
+.content .container .left div:first-child > div:last-child p{
+    margin: 0;
+    font-family: poppins-semibold;
+}
+.content .container .left div:first-child > img{
+    border-radius: 20px;
+    width: 375px;
+    height: 486px;
+    text-align: center;
+}
+.left, .right{
+    padding: 50px;
+    flex: 1;
+    font-family: poppins;
+}
+.content .container .right .details{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.content .container .right .details > div:first-child{
+    font-family: poppins-bold;
+    font-size: 24px;
+}
+.content .container .right .details > div:nth-child(2){
+    display: flex;
+    gap: 15px;
+}
+.content .container .right .details > div:nth-child(2) img{
+    display: flex;
+    width: 24px;
+    height: 24px;
+}
+.content .container .right .details > div:nth-child(2) > div{
+    display: flex;
+    flex: 1;
+    font-size: 14px;
+    font-family: poppins-semibold;
+}
+.content .container .right .details > div:last-child{
+    display: flex;
+    flex-direction: column;
+}
+.content .container .right .details > div:last-child {
+    display: flex;
+    gap: 20px;
+    font-size: 12px;
+    font-family: poppins-semibold;
+}
+.content .container .right .details > div:last-child > .person{
+    display: flex;
+}
+.content .container .right .details > div:last-child .person div{
+    height: 28px;
+    width: 28px;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid white;
+}
+.content .container .right .details > div:last-child .person div:not(:first-child){
+    margin-left: -5px;
+}
+.content .container .right .details > div:last-child .person div:last-child{
+    position: relative;
+}
+.content .container .right .details > div:last-child .person div:last-child::after{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f7a240a8;
+}
+.content .container .right .details > div:last-child .person div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.text p:first-child {
+    font-family: poppins-bold;
+    font-size: 24px;
+}
+.text p:last-child {
+    color: #3366FF;
+    font-family: poppins-semibold;
+}
+.button-maps{
+    font-family: poppins-semibold;
+    color: white;
+    background-color: #3366FF;
+    padding: 10px;
+    letter-spacing: 1px;
+    border: 1px transparent;
+    border-radius: 10px;
+    width: 100%;
+}
+.maps{
+    max-width: 315px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.maps-text{
+    font-family: poppins-bold;
+    font-size: 24px;
+}
+
+/* login-page */
+.login{
+    display: flex;
+    flex-direction: column;
+    max-width: 316px;
+    justify-content: center;
+}
+.login-1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+.login-1 > div:first-child{
+    font-family: poppins-bold;
+    font-size: 24px;
+}
+.login-2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.forgot{
+    color: #3366FF;
+    font-family: poppins-semibold;
+    text-align: right;
+    padding: 20px 0;
+}
+.sign-in{
+    font-family: poppins-semibold;
+    color: white;
+    background-color: #3366FF;
+    padding: 10px;
+    letter-spacing: 1px;
+    border: 1px transparent;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.optional{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.socmed{
+    padding: 10px 30px;
+    border: 1px solid #3366FF;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 0 5px;
 }
