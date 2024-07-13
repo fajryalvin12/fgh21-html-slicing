@@ -14,7 +14,7 @@ body {
     margin: 0;
     background-color:  #F4F7FF;
 }
-/* Sign Up */
+/* Sign Up and Login */
 .auth-content {
     display: flex;
     height: 100%;
@@ -53,45 +53,16 @@ body {
     color: #FC1055;
 }
 @media (max-width:992px) {
-    .signup > div:first-child{
+    .auth-content > div:first-child{
         display: none;
     }    
-}
-
-.data {
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
-    justify-content: center;
-    text-align: left;
-}
-.data h1 {
-    font-family: poppins-bold;
-    font-size: 24px;
-}
-.data .subheading {
-    font-family: poppins;
-    font-size: 14px;
-}
-.data .subheading .subheading2 {
-    color: #3366FF;
-}
-.data form {
-    max-width: 315px;
-    justify-content: center;
-    padding: 5px 10px;
-}
-.data form .form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    height: 40px;
 }
 .name, .email, .password, .confirm{
     padding: 15px 50px;
     letter-spacing: 1px;
     border-radius: 10px;
     border-color: #C1C5D0;
+    width: 100%;
 }
 .data .button {
     margin-top: 250px;
@@ -101,6 +72,69 @@ body {
     color: #ffff;
     background-color: #3366FF;
     border-style: hidden;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    max-width: 316px;
+    justify-content: center;
+}
+.login-1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+.login-1 > div:first-child{
+    font-family: poppins-bold;
+    font-size: 24px;
+}
+.login-2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.forgot{
+    color: #3366FF;
+    font-family: poppins-semibold;
+    text-align: right;
+    padding: 20px 0;
+}
+.sign-in{
+    font-family: poppins-semibold;
+    color: white;
+    background-color: #3366FF;
+    padding: 10px;
+    letter-spacing: 1px;
+    border: 1px transparent;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.optional{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.socmed{
+    padding: 10px 30px;
+    border: 1px solid #3366FF;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 0 5px;
+}
+.password-hide{
+    display: flex;
+}
+.eye{
+    border: transparent;
+}
+.login-2 .fill {
+    width: 100%;
+}
+.login-2 .fill input {
+    width: auto;
 }
 
 /* Homepage */
@@ -1121,57 +1155,4 @@ color: #3366FF;
 .maps-text{
     font-family: poppins-bold;
     font-size: 24px;
-}
-
-/* login-page */
-.login{
-    display: flex;
-    flex-direction: column;
-    max-width: 316px;
-    justify-content: center;
-}
-.login-1{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 20px;
-}
-.login-1 > div:first-child{
-    font-family: poppins-bold;
-    font-size: 24px;
-}
-.login-2{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-.forgot{
-    color: #3366FF;
-    font-family: poppins-semibold;
-    text-align: right;
-    padding: 20px 0;
-}
-.sign-in{
-    font-family: poppins-semibold;
-    color: white;
-    background-color: #3366FF;
-    padding: 10px;
-    letter-spacing: 1px;
-    border: 1px transparent;
-    border-radius: 10px;
-    width: 100%;
-    margin-bottom: 30px;
-}
-.optional{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-.socmed{
-    padding: 10px 30px;
-    border: 1px solid #3366FF;
-    border-radius: 5px;
-    background-color: #fff;
-    margin: 0 5px;
 }

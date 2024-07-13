@@ -1,38 +1,50 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Sign Up</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="asset/style.css">
-    </head>
-    <body>
-        <div class="auth-content">
-            <div class="left">
-                <img class="logo" src="./asset/images/mascot.png" alt="logo">
-            </div>
-            <div class="right">
-                <div class="right-wrapper">
-                    <div class="heading">
-                        <img src="./asset/icons/logo.png" alt="wetick">
-                        <span class="blue">We</span><span class="pink">tick</span>
-                    </div>
-                    <div class="data">
-                        <h1>Sign Up</h1>
-                        <div class="subheading">
-                            <span class="subheading1">Already have an account?</span><span class="subheading2">Login</span>
-                        </div>
-                        <form>
-                            <div class="form">
-                                <input class="name" type="text" placeholder="Full Name">
-                                <input class="email" type="email" placeholder="Email">
-                                <input class="password" type="password" placeholder="Password">
-                                <input class="confirm" type="password" placeholder="Confirm Password">
-                            </div>
-                        </form>
-                        <button type="submit" class="button">Sign Up</button>
-                    </div>
-                </div>
-            </div>
-        
-    </body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./asset/css/style.css" />
+  </head>
+  <body>
+    <div class="auth-user">
+      <div class="left-auth">
+        <img src="./asset/images/mascot.png" alt="" />
+      </div>
+      <div class="right-auth">
+        <form class="form">
+          <div class="brand">
+            <img src="./asset/icons/logo.png" alt="logo" />
+            <span class="blue">We</span><span class="pink">tick</span>
+          </div>
+          <div class="auth-caption">Sign Up</div>
+          <div class="auth-subcaption">
+            <span>Already have an account?</span>
+            <span class="blue-bold">Log In</span>
+          </div>
+          <div class="auth-data">
+            <label for=""></label>
+            <input class="fill" type="text" placeholder="Full Name" />
+            <label for=""></label>
+            <input class="fill" type="email" placeholder="Email" />
+            <label for=""></label>
+            <input class="fill" type="password" placeholder="Password" />
+            <label for=""></label>
+            <input
+              class="fill"
+              type="password"
+              placeholder="Confirm Password"
+            />
+          </div>
+          <div class="auth-checkbox">
+            <input type="checkbox" />
+            <label for="">Accept terms and condition</label>
+          </div>
+          <div>
+            <button class="auth-button" type="submit">Sign Up</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>

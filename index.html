@@ -1,276 +1,292 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="asset/style.css">
-</head>
-<body>
-    <div class="homepage">
-        <nav id="nav" class="navigation-bar">
-            <div class="main">
-                <div class="logo">
-                    <img src="./asset/icons/logo.png" alt="wetick">
-                    <span class="blue">We</span>
-                    <span class="pink">tick</span>
-                </div>
-                <div>
-                    <button id="menu">MENU</button>
-                </div>
-            </div>
-            <div class="menu-bar">
-                <li>
-                    <a href="/index.html">Home</a>
-                </li>
-                <li>Create Event</li>
-                <li>Location</li>
-            </div>
-            <div class="button">
-                <button class="login">LogIn</button>
-                <button class="signup">SignUp</button>
-            </div>
-        </nav>
-        <div class="head">
+    <link rel="stylesheet" href="./asset/css/style.css" />
+  </head>
+  <body>
+    <div class="navigation-bar">
+      <div class="brand">
+        <img src="./asset/icons/logo.png" alt="logo" />
+        <span class="blue">We</span><span class="pink">tick</span>
+      </div>
+      <div class="menu-bar">
+        <li>Home</li>
+        <li>Create Event</li>
+        <li>Location</li>
+      </div>
+      <div class="navbar-button">
+        <button class="navbar-button-click-log">Log In</button>
+        <button class="navbar-button-click-sign">Sign Up</button>
+      </div>
+    </div>
+    <div class="cover">
+      <div class="mascot-cover">
+        <img src="./asset/images/mascot.png" alt="" />
+      </div>
+    </div>
+    <div class="event">
+      <div class="event-pink">
+        <div class="line-pink">
+          <img src="./asset/icons/line-pink.svg" alt="line-pink" />
         </div>
-        <div class="head-event">
-            <button class="event">EVENT</button>
-            <h1>Events For You</h1>
-            <div class="date">
-                <div>
-                    <div>13</div>
-                    <div>Mon</div>
-                </div>
-                <div>
-                    <div>14</div>
-                    <div>Tue</div>
-                </div>
-                <div class="selected">
-                    <div>15</div>
-                    <div>Wed</div>
-                </div>
-                <div>
-                    <div>16</div>
-                    <div>Thu</div>
-                </div>
-                <div>
-                    <div>17</div>
-                    <div>Fri</div>
-                </div>
-            </div>
+        <div class="caption-text">EVENT</div>
+      </div>
+    </div>
+    <div class="event-caption">Events For You</div>
+    <div class="date-grid">
+      <div>
+        <div>13</div>
+        <div>Mon</div>
+      </div>
+      <div>
+        <div>14</div>
+        <div>Tue</div>
+      </div>
+      <div class="active">
+        <div>15</div>
+        <div>Wed</div>
+      </div>
+      <div>
+        <div>16</div>
+        <div>Thu</div>
+      </div>
+      <div>
+        <div>17</div>
+        <div>Fri</div>
+      </div>
+    </div>
+    <div class="box-wrapper">
+      <div class="event-box">
+        <img src="./asset/images/event-1.png" alt="" />
+        <div class="event-text">
+          <div>Wed, 15 Nov, 4:00 PM</div>
+          <div>Sights & Sounds Exhibition</div>
         </div>
-        <div id="event-list" class="event-list">
-            <div class="events-display">
-                <img src="./asset/images/event-1.png" alt="event-1">
-                <div class="event-details">
-                    <div class="event-text">
-                        <div>Wed, 15 Nov, 4:00 PM</div>
-                        <div>Sights & Sounds Exhibition</div>
-                    </div>
-                    <div class="person">
-                        <div>
-                            <img src="./asset/images/avatar1.png" alt="avatar1">
-                        </div>
-                        <div>
-                            <img src="./asset/images/avatar2.png" alt="avatar1">
-                        </div>
-                        <div>
-                            <img src="./asset/images/avatar3.png" alt="avatar1">
-                        </div>
-                        <div>
-                            <img src="./asset/images/avatar4.png" alt="avatar1">
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="attendee">
+          <img src="./asset/images/avatar1.png" alt="A1" />
+          <img src="./asset/images/avatar2.png" alt="A2" />
+          <img src="./asset/images/avatar3.png" alt="A3" />
+          <img src="./asset/images/avatar4.png" alt="A4" />
         </div>
-        <div class="location">
-            <div class="wrapper">
-                <div class="container">
-                    <div class="header">
-                        <button class="title">LOCATION</button>
-                        <h1>Discover Events Near You</h1>
-                    </div>
-                    <div>
-                        <img src="./asset/images/aceh.png" alt="aceh">
-                        <p>Aceh</p>
-                    </div>
-                    <div>
-                        <img src="./asset/images/jakarta.png" alt="jakarta">
-                        <p>Jakarta</p>
-                    </div>
-                    <div>
-                        <img src="./asset/images/solo.png" alt="solo">
-                        <p>Solo</p>
-                    </div>
-                </div>
-                <div class="container-2">
-                    <div>
-                        <img src="./asset/images/bandung.png" alt="bandung">
-                        <p>Bandung</p>
-                    </div>
-                    <div>
-                        <img src="./asset/images/jogja.png" alt="jogja">
-                        <p>Yogyakarta</p>
-                    </div>
-                    <div>
-                        <img src="./asset/images/bali.png" alt="bali">
-                        <p>Bali</p>
-                    </div>
-                    <div>
-                        <img src="./asset/images/semarang.png" alt="semarang">
-                        <p>Semarang</p>
-                    </div>
-                </div>
-                <button class="see-all">See All</button>
-            </div>
+      </div>
+      <div class="event-box">
+        <img src="./asset/images/event-2.png" alt="" />
+        <div class="event-text">
+          <div>Wed, 15 Nov, 4:00 PM</div>
+          <div>Sights & Sounds Exhibition</div>
         </div>
-        <div class="head-category">
-            <button class="header">CATEGORY</button>
-            <h1>Browse Events By Category</h1>
+        <div class="attendee">
+          <img src="./asset/images/avatar1.png" alt="A1" />
+          <img src="./asset/images/avatar2.png" alt="A2" />
+          <img src="./asset/images/avatar3.png" alt="A3" />
+          <img src="./asset/images/avatar4.png" alt="A4" />
         </div>
-        <div class="category-list">
-            <li>Music</li>
-            <li>Arts</li>
-            <li>Outdoors</li>
-            <li>Workshop</li>
-            <li>Sport</li>
-            <li>Festival</li>
-            <li>Fashion</li>
+      </div>
+      <div class="event-box">
+        <img src="./asset/images/event-3.jpg" alt="" />
+        <div class="event-text">
+          <div>Wed, 15 Nov, 4:00 PM</div>
+          <div>Sights & Sounds Exhibition</div>
         </div>
-        <div class="category-box">
-            <div class="events-display">
-                <img src="./asset/images/event-1.png" alt="event-1">
-                <div class="event-details">
-                    <div class="event-text">
-                        <div>Thu, 16 Nov, 7:00 PM</div>
-                        <div>Sights & Sounds Exhibition</div>
-                    </div>
-                    <div class="person">
-                        <div>
-                            <img src="./asset/images/avatar1.png" alt="avatar1">
-                        </div>
-                        <div>
-                            <img src="./asset/images/avatar2.png" alt="avatar1">
-                        </div>
-                        <div>
-                            <img src="./asset/images/avatar3.png" alt="avatar1">
-                        </div>
-                        <div>
-                            <img src="./asset/images/avatar4.png" alt="avatar1">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="events-display">
-                <img src="./asset/images/event-2.png" alt="event-1">
-                <div class="event-details">
-                    <div class="event-text">
-                        <div>Thu, 16 Nov, 7:00 PM</div>
-                        <div>See it in Gold Class</div>
-                    </div>
-                    <div class="person">
-                        <div>
-                            <img src="./asset/images/avatar1.png" alt="avatar1">
-                        </div>
-                        <div>
-                            <img src="./asset/images/avatar2.png" alt="avatar1">
-                        </div>
-                        <div>
-                            <img src="./asset/images/avatar3.png" alt="avatar1">
-                        </div>
-                        <div>
-                            <img src="./asset/images/avatar4.png" alt="avatar1">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="events-display">
-                <img src="./asset/images/event-1.png" alt="event-1">
-                <div class="event-details">
-                    <div class="event-text">
-                        <div>Thu, 16 Nov, 7:00 PM</div>
-                        <div>Sights & Sounds Exhibition</div>
-                    </div>
-                    <div class="person">
-                        <div>
-                            <img src="./asset/images/avatar1.png" alt="avatar1">
-                        </div>
-                        <div>
-                            <img src="./asset/images/avatar2.png" alt="avatar1">
-                        </div>
-                        <div>
-                            <img src="./asset/images/avatar3.png" alt="avatar1">
-                        </div>
-                        <div>
-                            <img src="./asset/images/avatar4.png" alt="avatar1">
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="attendee">
+          <img src="./asset/images/avatar1.png" alt="A1" />
+          <img src="./asset/images/avatar2.png" alt="A2" />
+          <img src="./asset/images/avatar3.png" alt="A3" />
+          <img src="./asset/images/avatar4.png" alt="A4" />
         </div>
-        <div class="partner">
-            <button class="header">PARTNER</button>
-            <h1>Our Trusted Partners</h1>
-            <p>By companies like :</p>
-            <div class="brand">
-                <div>
-                    <img src="./asset/icons/partner-1.png" alt="partner-1">
-                </div>
-                <div>
-                    <img src="./asset/icons/partner-2.png" alt="partner-2">
-                </div>
-                <div>
-                    <img src="./asset/icons/partner-3.png" alt="partner-3">
-                </div>
-                <div>
-                    <img src="./asset/icons/partner-4.png" alt="partner-4">
-                </div>
-                <div>
-                    <img src="./asset/icons/partner-5.png" alt="partner-5">
-                </div>
-                <div>
-                    <img src="./asset/icons/partner-6.png" alt="partner-6">
-                </div>
-            </div>
+      </div>
+      <div class="event-box">
+        <img src="./asset/images/event-4.jpg" alt="" />
+        <div class="event-text">
+          <div>Wed, 15 Nov, 4:00 PM</div>
+          <div>Sights & Sounds Exhibition</div>
         </div>
+        <div class="attendee">
+          <img src="./asset/images/avatar1.png" alt="A1" />
+          <img src="./asset/images/avatar2.png" alt="A2" />
+          <img src="./asset/images/avatar3.png" alt="A3" />
+          <img src="./asset/images/avatar4.png" alt="A4" />
+        </div>
+      </div>
+      <div class="event-box">
+        <img src="./asset/images/event-5.jpg" alt="" />
+        <div class="event-text">
+          <div>Wed, 15 Nov, 4:00 PM</div>
+          <div>Sights & Sounds Exhibition</div>
+        </div>
+        <div class="attendee">
+          <img src="./asset/images/avatar1.png" alt="A1" />
+          <img src="./asset/images/avatar2.png" alt="A2" />
+          <img src="./asset/images/avatar3.png" alt="A3" />
+          <img src="./asset/images/avatar4.png" alt="A4" />
+        </div>
+      </div>
+      <div class="event-box">
+        <img src="./asset/images/event-6.jfif" alt="" />
+        <div class="event-text">
+          <div>Wed, 15 Nov, 4:00 PM</div>
+          <div>Sights & Sounds Exhibition</div>
+        </div>
+        <div class="attendee">
+          <img src="./asset/images/avatar1.png" alt="A1" />
+          <img src="./asset/images/avatar2.png" alt="A2" />
+          <img src="./asset/images/avatar3.png" alt="A3" />
+          <img src="./asset/images/avatar4.png" alt="A4" />
+        </div>
+      </div>
+    </div>
+    <div class="box-wrapper-button">
+      <button><img src="./asset/icons/button-left.png" alt="left" /></button>
+      <button><img src="./asset/icons/button-right.png" alt="right" /></button>
+    </div>
+    <div class="location">
+      <div class="event-default-1">
+        <div class="line-pink">
+          <img src="./asset/icons/line-normal.png" alt="line-normal" />
+        </div>
+        <div class="caption-text">LOCATION</div>
+      </div>
+      <div class="location-content">
+        <div class="caption-location">Discover Events Near You</div>
+        <div class="destination">
+          <img src="./asset/images/jakarta.png" alt="JKT" />
+          <p>Jakarta</p>
+        </div>
+        <div class="destination">
+          <img src="./asset/images/bandung.png" alt="BDG" />
+          <p>Bandung</p>
+        </div>
+        <div class="destination">
+          <img src="./asset/images/bali.png" alt="BLI" />
+          <p>Bali</p>
+        </div>
+        <div class="destination">
+          <img src="./asset/images/aceh.png" alt="ACH" />
+          <p>Aceh</p>
+        </div>
+        <div class="destination">
+          <img src="./asset/images/solo.png" alt="SLO" />
+          <p>Solo</p>
+        </div>
+        <div class="destination">
+          <img src="./asset/images/jogja.png" alt="DIY" />
+          <p>Yogyakarta</p>
+        </div>
+        <div class="destination">
+          <img src="./asset/images/semarang.png" alt="SMG" />
+          <p>Semarang</p>
+        </div>
+      </div>
+      <div class="location-button">
+        <button>See All</button>
+      </div>
+    </div>
+    <div class="category">
+      <div class="event-pink">
+        <div class="line-pink">
+          <img src="./asset/icons/line-pink.svg" alt="line-pink" />
+        </div>
+        <div class="caption-text">CATEGORY</div>
+      </div>
+    </div>
+    <div class="event-caption">Browse Events By Category</div>
+    <div class="category-variant">
+      <div>Music</div>
+      <div>Arts</div>
+      <div>Outdoors</div>
+      <div>Workshop</div>
+      <div>Sport</div>
+      <div>Festival</div>
+      <div>Fashion</div>
+    </div>
+    <div class="category-content">
+      <div class="box-wrapper-button">
+        <button>
+          <img src="./asset/icons/button-left.png" alt="left" />
+        </button>
+      </div>
+      <div class="category-content-wrapbox">
+        <div class="category-content-box">
+          <img src="./asset/images/event-4.jpg" alt="" />
+          <div></div>
+          <div class="category-text">
+            <div class="ctext-date">Wed, 15 Nov, 4:00 PM</div>
+            <div class="ctext-name">Sights & Sounds Exhibition</div>
+          </div>
+        </div>
+        <div class="category-content-box">
+          <img src="./asset/images/event-3.jpg" alt="" />
+          <div></div>
+          <div class="category-text">
+            <div class="ctext-date">Wed, 15 Nov, 4:00 PM</div>
+            <div class="ctext-name">Sights & Sounds Exhibition</div>
+          </div>
+        </div>
+        <div class="category-content-box">
+          <img src="./asset/images/event-6.jfif" alt="" />
+          <div></div>
+          <div class="category-text">
+            <div class="ctext-date">Wed, 15 Nov, 4:00 PM</div>
+            <div class="ctext-name">Sights & Sounds Exhibition</div>
+          </div>
+        </div>
+      </div>
+      <div class="box-wrapper-button">
+        <button>
+          <img src="./asset/icons/button-right.png" alt="right" />
+        </button>
+      </div>
+    </div>
+    <div class="partner">
+      <div class="event-default-2">
+        <div class="line-pink">
+          <img src="./asset/icons/line-normal.png" alt="line-normal" />
+        </div>
+        <div class="caption-text">PARTNER</div>
+      </div>
+      <div class="event-caption">Our Trusted Partners</div>
+      <div class="partner-subcaption">By companies like :</div>
+      <div class="partner-icons">
+        <img src="./asset/icons/partner-1.png" alt="" />
+        <img src="./asset/icons/partner-2.png" alt="" />
+        <img src="./asset/icons/partner-3.png" alt="" />
+        <img src="./asset/icons/partner-4.png" alt="" />
+        <img src="./asset/icons/partner-5.png" alt="" />
+        <img src="./asset/icons/partner-6.png" alt="" />
+      </div>
     </div>
     <div class="footer">
-        <div class="section">
-            <div class="brand">
-                <div class="logo">
-                    <img src="./asset/icons/logo.png" alt="wetick">
-                    <span class="blue">We</span>
-                    <span class="pink">tick</span>
-                </div>
-                <div class="caption">
-                    <div class="text">
-                        Find events you love with our
-                    </div>
-                </div>
-                <div>
-                    <img src="./asset/icons/footer-socmed.png" alt="socmed">
-                </div>
-            </div>
+      <div class="section">
+        <div class="brand-wrapper">
+          <div class="brand">
+            <img src="./asset/icons/logo.png" alt="logo" />
+            <span class="blue">We</span><span class="pink">tick</span>
+          </div>
+          <div class="caption-footer">
+            <div class="text">Find events you love with our</div>
             <div>
-                <div>Wetick</div>
-                <ul id="footer-1">
-                </ul>
+              <img src="./asset/icons/footer-socmed.png" alt="socmed" />
             </div>
-            <div>
-                <div>Features</div>
-                <ul id="footer-2">
-                </ul>
-            </div>
-            <div>
-                <div>Company</div>
-                <ul id="footer-3">
-                </ul>
-            </div>
+          </div>
         </div>
-        <div class="copyright">
-            &copy; 2020 Wetick All Rights Reserved
+        <div>
+          <div>Wetick</div>
+          <ul id="footer-1"></ul>
         </div>
+        <div>
+          <div>Features</div>
+          <ul id="footer-2"></ul>
+        </div>
+        <div>
+          <div>Company</div>
+          <ul id="footer-3"></ul>
+        </div>
+      </div>
+      <div class="copyright">&copy; 2020 Wetick All Rights Reserved</div>
     </div>
-    <script src="./asset/script.js"></script>
-</body>
+    <script src="./asset/js/footer.js"></script>
+  </body>
 </html>
