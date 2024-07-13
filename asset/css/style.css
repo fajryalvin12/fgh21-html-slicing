@@ -71,7 +71,7 @@
 }
 .fill {
   font-family: poppins;
-  padding: 15px 100px 15px 21px;
+  padding: 25px 100px 25px 21px;
   border: 1px solid #c1c5d0;
   border-radius: 20px;
   font-size: 14px;
@@ -858,7 +858,7 @@ img.heart {
   cursor: pointer;
 }
 .fill {
-  padding: 10px 20px;
+  padding: 20px 20px;
   width: 90%;
 }
 .profile-form > button {
@@ -956,16 +956,12 @@ img.heart {
   left: 0;
 }
 .popup-central-container {
+  margin: 50px 150px;
+  padding: 100px;
   background-color: white;
-  height: 726px;
-  width: 1135px;
   display: flex;
-  justify-content: center;
-  margin: 100px 450px;
-  border-radius: 30px;
-  padding: 34px;
   flex-direction: column;
-  gap: 45px;
+  border-radius: 30px;
 }
 .popup-insert-1 {
   display: flex;
@@ -984,7 +980,7 @@ img.heart {
   gap: 20px;
 }
 #insert-7 {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 .popup-container > .popup-central-container > form > div > .auth-button {
   width: 100%;
@@ -996,4 +992,8 @@ img.heart {
   border: transparent;
   border-radius: 20px;
   letter-spacing: 1px;
+  max-width: 375px;
+}
+.create-event {
+  display: none;
 }
