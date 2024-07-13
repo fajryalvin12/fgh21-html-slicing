@@ -74,6 +74,43 @@
     display: flex !important;
     flex-direction: column !important;
   }
+
+  /* event, booking and payment page */
+  .navbar-profile {
+    display: none !important;
+  }
+  .central-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 !important;
+    padding: 20px !important;
+    gap: 60px;
+  }
+  .wishlist > div:last-child {
+    display: none;
+  }
+  .cc-left > img {
+    width: 100% !important;
+    height: 100vh !important;
+  }
+  .event-head {
+    position: absolute;
+    top: 800px;
+    padding-left: 40px;
+    color: white;
+  }
+  .ehead-date-time {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .std {
+    display: none !important;
+  }
+  .booking-button {
+    display: flex;
+    justify-content: center;
+  }
 }
 /* Sign-up and Log-in */
 .auth-user {
