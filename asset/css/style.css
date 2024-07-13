@@ -76,6 +76,7 @@
   border-radius: 20px;
   font-size: 14px;
   letter-spacing: 1px;
+  outline: none;
 }
 .auth-button {
   width: 100%;
@@ -858,7 +859,7 @@ img.heart {
 }
 .fill {
   padding: 10px 20px;
-  width: 70%;
+  width: 90%;
 }
 .profile-form > button {
   padding: 20px 0;
@@ -942,5 +943,57 @@ img.heart {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  color: rgba(128, 128, 128, 0.5);
+  color: rgba(128, 128, 128, 0.247);
+}
+
+/* Create Event */
+.popup-container {
+  background-color: #373a4277;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.popup-central-container {
+  background-color: white;
+  height: 726px;
+  width: 1135px;
+  display: flex;
+  justify-content: center;
+  margin: 100px 450px;
+  border-radius: 30px;
+  padding: 34px;
+  flex-direction: column;
+  gap: 45px;
+}
+.popup-insert-1 {
+  display: flex;
+}
+.popup-insert-1 > div {
+  flex: 1;
+}
+.popup-central-container > form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.popup-insert-2 {
+  display: grid;
+  grid-template: auto auto;
+  gap: 20px;
+}
+#insert-7 {
+  margin-bottom: 20px;
+}
+.popup-container > .popup-central-container > form > div > .auth-button {
+  width: 100%;
+  padding: 20px;
+  font-family: poppins-semibold;
+  font-size: 16px;
+  background-color: #3366ff;
+  color: white;
+  border: transparent;
+  border-radius: 20px;
+  letter-spacing: 1px;
 }
