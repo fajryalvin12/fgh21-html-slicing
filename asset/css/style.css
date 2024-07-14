@@ -111,6 +111,48 @@
     display: flex;
     justify-content: center;
   }
+
+  /* profile-page */
+  .left-wrapper {
+    display: none;
+  }
+  .container-wrapper > .central-container {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    border-radius: 0;
+  }
+  .image-wrapper {
+    margin: 0 !important;
+  }
+  .image-wrapper > div:nth-child(2),
+  .image-wrapper > div:last-child {
+    display: none !important;
+  }
+  .profile-form > div {
+    align-items: center;
+    display: flex;
+  }
+  .profile-form > .booking-button {
+    width: 100%;
+  }
+  /* manage-event */
+  .mybooking-header {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+  }
+  .mybooking-icon {
+    max-width: fit-content;
+  }
+  .footer {
+    background-color: #ffff;
+  }
+  .popup-container > .popup-central-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
 /* Sign-up and Log-in */
 .auth-user {
@@ -949,6 +991,7 @@ img.heart {
   font-family: poppins-bold;
   font-size: 20px;
   letter-spacing: 1px;
+  margin-bottom: 20px;
 }
 .profile-form-subheader {
   font-family: poppins-semibold;
@@ -998,7 +1041,6 @@ img.heart {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  align-items: center;
 }
 .central-container-depth {
   display: flex;
@@ -1053,7 +1095,7 @@ img.heart {
   left: 0;
 }
 .popup-central-container {
-  margin: 50px 150px;
+  margin: 200px 150px;
   padding: 100px;
   background-color: white;
   display: flex;
@@ -1065,15 +1107,13 @@ img.heart {
 }
 .popup-insert-1 > div {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .popup-central-container > form > div {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-}
-.popup-insert-2 {
-  display: grid;
-  grid-template: auto auto;
   gap: 20px;
 }
 #insert-7 {
@@ -1093,4 +1133,14 @@ img.heart {
 }
 .create-event {
   display: none;
+}
+.popup-container
+  > .popup-central-container
+  > form
+  > div
+  > div:last-child
+  > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }

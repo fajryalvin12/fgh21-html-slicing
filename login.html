@@ -12,7 +12,7 @@
         <img src="./asset/images/mascot.png" alt="" />
       </div>
       <div class="right-auth">
-        <form class="form">
+        <form class="form" id="auth-form">
           <div class="brand">
             <img src="./asset/icons/logo.png" alt="logo" />
             <span class="blue">We</span><span class="pink">tick</span>
@@ -23,11 +23,21 @@
           </div>
           <div class="auth-data">
             <label for=""></label>
-            <input class="fill" type="text" placeholder="Username" />
+            <input
+              name="name"
+              class="fill"
+              type="text"
+              placeholder="Username"
+            />
             <label for=""></label>
-            <input class="fill" type="email" placeholder="Email" />
+            <input name="email" class="fill" type="email" placeholder="Email" />
             <label for=""></label>
-            <input class="fill" type="password" placeholder="Password" />
+            <input
+              name="pass"
+              class="fill"
+              type="password"
+              placeholder="Password"
+            />
           </div>
           <div class="auth-forgot">
             <a href="./forgot-password.html">Forgot Password?</a>
@@ -49,5 +59,6 @@
         </form>
       </div>
     </div>
+    <script src="./asset/js/login.js"></script>
   </body>
 </html>
