@@ -1,5 +1,4 @@
 const form = document.getElementsByTagName("form").item(0);
-console.log(form);
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   const dataName = e.target.name.value;

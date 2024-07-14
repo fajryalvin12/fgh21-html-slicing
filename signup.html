@@ -12,7 +12,7 @@
         <img src="./asset/images/mascot.png" alt="" />
       </div>
       <div class="right-auth">
-        <form class="form">
+        <form class="form" id="auth-signup">
           <div class="brand">
             <img src="./asset/icons/logo.png" alt="logo" />
             <span class="blue">We</span><span class="pink">tick</span>
@@ -20,20 +20,42 @@
           <div class="auth-caption">Sign Up</div>
           <div class="auth-subcaption">
             <span>Already have an account?</span>
-            <span class="blue-bold"><a href="./login.html">Login</a></span>
+            <span class="blue-bold"
+              ><a
+                href="./login.html"
+                style="color: #3366ff; text-decoration: none"
+                >Login</a
+              ></span
+            >
           </div>
           <div class="auth-data">
             <label for=""></label>
-            <input class="fill" type="text" placeholder="Full Name" />
+            <input
+              name="fullname"
+              class="fill"
+              type="text"
+              placeholder="Full Name"
+            />
             <label for=""></label>
-            <input class="fill" type="email" placeholder="Email" />
+            <input
+              name="emailsign"
+              class="fill"
+              type="email"
+              placeholder="Email"
+            />
             <label for=""></label>
-            <input class="fill" type="password" placeholder="Password" />
+            <input
+              name="signpass"
+              class="fill"
+              type="password"
+              placeholder="Password"
+            />
             <label for=""></label>
             <input
               class="fill"
               type="password"
               placeholder="Confirm Password"
+              name="signconfirm"
             />
           </div>
           <div class="auth-checkbox">
@@ -46,5 +68,6 @@
         </form>
       </div>
     </div>
+    <script src="./asset/js/signup.js"></script>
   </body>
 </html>

@@ -13,17 +13,29 @@
         <span class="blue">We</span><span class="pink">tick</span>
       </div>
       <div class="menu-bar">
-        <li>Home</li>
+        <li>
+          <a href="/" style="color: black; text-decoration: none">Home</a>
+        </li>
         <li>
           <div>
-            <a href="./create-event.html">Create Event</a>
+            <a
+              href="./create-event.html"
+              style="color: black; text-decoration: none"
+              >Create Event</a
+            >
           </div>
         </li>
-        <li>Location</li>
+        <li>
+          <a href="#location-index" style="color: black; text-decoration: none"
+            >Location</a
+          >
+        </li>
       </div>
-      <div class="navbar-button">
-        <button class="navbar-button-click-log">Log In</button>
-        <button class="navbar-button-click-sign">Sign Up</button>
+      <div id="btn-navbar" class="navbar-button">
+        <button id="btn-login" class="navbar-button-click-log">Log In</button>
+        <button id="btn-signup" class="navbar-button-click-sign">
+          Sign Up
+        </button>
       </div>
     </nav>
     <div class="cover">
@@ -106,7 +118,13 @@
         <img src="./asset/images/event-4.jpg" alt="" />
         <div class="event-text">
           <div>Wed, 15 Nov, 4:00 PM</div>
-          <div><a href="./event-page.html">Cek Khodam Kak Mudryk</a></div>
+          <div>
+            <a
+              href="./event-page.html"
+              style="color: white; text-decoration: none"
+              >Cek Khodam Kak Mudryk</a
+            >
+          </div>
         </div>
         <div class="attendee">
           <img src="./asset/images/avatar1.png" alt="A1" />
@@ -146,7 +164,7 @@
       <button><img src="./asset/icons/button-left.png" alt="left" /></button>
       <button><img src="./asset/icons/button-right.png" alt="right" /></button>
     </div>
-    <div class="location">
+    <div class="location" id="location-index">
       <div class="event-default-1">
         <div class="line-pink">
           <img src="./asset/icons/line-normal.png" alt="line-normal" />
@@ -292,5 +310,6 @@
       <div class="copyright">&copy; 2020 Wetick All Rights Reserved</div>
     </div>
     <script src="./asset/js/footer.js"></script>
+    <script src="./asset/js/index.js"></script>
   </body>
 </html>

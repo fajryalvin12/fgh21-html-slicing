@@ -246,6 +246,7 @@
   border: 1px solid #3366ff;
   border-radius: 10px;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 /* Homepage */
@@ -970,9 +971,6 @@ img.heart {
   margin-left: 70px;
   cursor: pointer;
 }
-.menu-profile-edit {
-  color: #3366ff;
-}
 
 /* profile-details */
 .profile-form > div {
@@ -1143,4 +1141,18 @@ img.heart {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+/* Custom Edit */
+#change-password {
+  color: #3366ff;
+}
+#edit {
+  color: #3366ff;
+}
+#my-booking {
+  color: #3366ff;
+}
+#wishlist-id {
+  color: #3366ff;
 }
